@@ -1,0 +1,151 @@
+@import "cores";
+
+footer {
+	width: 100%;
+	padding: 20px;
+    background: $cor-5;
+
+    nav {
+		margin: 0 0 20px;
+
+        ul {
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			padding: 0 0 20px;
+			border-bottom: 1px solid rgba($branco, 0.5);
+
+            li {
+                float: left;
+                margin: 0 10px;
+                font-size: 1.4em;
+				color: $branco;
+				transition: all 0.5s;
+
+                a {
+					display: block;
+					color: rgba($branco, 1);
+
+					&:hover {
+						transform: scale(1.1);
+						color: rgba($branco, 0.5);
+					}
+                }
+				
+				&.on {
+
+					a {
+						cursor: default;
+						color: rgba($branco, 0.2);
+
+						&:hover {
+							color: rgba($branco, 0.2);
+							transform: scale(1);
+						}
+					}
+				}
+            }
+        }
+	}
+	
+	p {
+		margin: 0 0 40px;
+		font-size: 1em;
+		line-height: 1.6em;
+		text-align: center;
+		color: $branco;
+	}
+
+	.logotipo {
+		cursor: pointer;
+		width: 100px;
+		margin: 0 auto;
+		opacity: 0.5;
+		transition: all 0.5s;
+
+		&:hover {
+			opacity: 1;
+			transform: scale(1.1);
+		}
+	}
+}
+
+
+// RESPONSIVIDADE
+
+@media (min-width: 425px) {
+	
+	footer {
+		padding: 30px;
+
+		nav {
+			margin: 0 0 30px;	
+			
+			ul {
+				padding: 0 0 30px;
+	
+				li {
+					margin: 0 15px;
+					font-size: 2em;
+				}
+			}
+		}
+		
+		p {
+			margin: 0 0 60px;
+			font-size: 1.4em;
+		}
+	
+		.logotipo {
+			width: 140px;
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	
+	footer {
+		padding: 40px 60px 60px;
+
+		nav {
+			margin: 0 0 40px;	
+			
+			ul {
+				padding: 0 0 40px;
+	
+				li {
+					margin: 0 30px;
+					font-size: 3em;
+				}
+			}
+		}
+		
+		p {
+			margin: 0 0 90px;
+			font-size: 2.2em;
+		}
+	
+		.logotipo {
+			width: 220px;
+		}
+	}
+}
+
+@media (min-width: 1280px) {
+
+	footer {
+		width: 100%;
+		padding: 40px 0 60px;
+
+		nav {
+			width: 1280px;
+			margin: 0 auto 40px;
+		}
+
+		p {
+			width: 1280px;
+			padding: 0;
+			margin: 0 auto 90px;
+		}
+	}
+}

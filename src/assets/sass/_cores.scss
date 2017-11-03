@@ -1,0 +1,19 @@
+$cores-rosa: (
+	#f4005c,
+	#96002a
+);
+
+$cores-cinza: (
+	#e8e8e8,
+	#666666,
+	#333333
+);
+
+$branco: #ffffff;
+$preto: #000000;
+
+$cor-1: nth($cores-rosa, 1);
+$cor-2: nth($cores-rosa, 2);
+$cor-3: nth($cores-cinza, 1);
+$cor-4: nth($cores-cinza, 2);
+$cor-5: nth($cores-cinza, 3);

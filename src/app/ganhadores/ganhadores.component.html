@@ -1,0 +1,43 @@
+<section>
+	<div class="content">
+		<h2>Prêmio Semanal</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>data</th>
+					<th>participanete</th>
+					<th>celular</th>
+					<th>prêmio</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng *ngFor="let item of ganhadoresSemanal">				
+					<td>{{ item.date }}</td>
+					<td>{{ item.name }}</td>
+					<td>{{ item.msisdn }}</td>
+					<td>{{ saldoSemanal }}</td>
+				</tr>
+
+			</tbody>
+		</table>
+		<h2>Prêmio Trimestral</h2>
+		<table>
+			<thead>
+				<tr>
+					<th>data</th>
+					<th>participanete</th>
+					<th>celular</th>
+					<th>prêmio</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr ng *ngFor="let item of ganhadoresTrimestral">				
+					<td>{{ item.date }}</td>
+					<td>{{ item.name }}</td>
+					<td>{{ item.msisdn }}</td>
+					<td>{{ saldoTrimestral }}</td>
+				</tr>
+			</tbody>
+		</table>
+	</div>
+</section>

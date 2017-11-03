@@ -1,0 +1,119 @@
+@mixin createFont($family, $style, $weight, $path, $file) {
+    font-family: $family;
+    src: url('#{$path}#{$file}.eot'),
+    url('#{$path}#{$file}.eot?#iefix') format('embedded-opentype'),
+    url('#{$path}#{$file}.svg') format('svg'),
+    url('#{$path}#{$file}.ttf') format('truetype'),
+    url('#{$path}#{$file}.woff2') format('woff2'),
+    url('#{$path}#{$file}.woff') format('woff'),
+    ;
+    font-style: $style;
+    font-weight: $weight;
+}
+
+// Ubuntu
+$ubuntu-path: "/assets/fonts/ubuntu/";
+@font-face {
+    @include createFont(ubuntu-light,
+    normal,
+    300,
+    $ubuntu-path,
+    ubuntu-light);
+}
+
+@font-face {
+    @include createFont(ubuntu-light,
+    italic,
+    300,
+    $ubuntu-path,
+    ubuntu-light-italic);
+}
+
+@font-face {
+    @include createFont(ubuntu-light,
+    normal,
+    bold,
+    $ubuntu-path,
+    ubuntu-bold);
+}
+
+@font-face {
+    @include createFont(ubuntu-light,
+    italic,
+    bold,
+    $ubuntu-path,
+    ubuntu-bold-italic);
+}
+
+@font-face {
+    @include createFont(ubuntu-regular,
+    normal,
+    400,
+    $ubuntu-path,
+    ubuntu-regular);
+}
+
+@font-face {
+    @include createFont(ubuntu-regular,
+    italic,
+    400,
+    $ubuntu-path,
+    ubuntu-italic);
+}
+
+@font-face {
+    @include createFont(ubuntu-regular,
+    normal,
+    bold,
+    $ubuntu-path,
+    ubuntu-bold);
+}
+
+@font-face {
+    @include createFont(ubuntu-regular,
+    italic,
+    bold,
+    $ubuntu-path,
+    ubuntu-bold-italic);
+}
+
+@font-face {
+    @include createFont(ubuntu-medium,
+    normal,
+    500,
+    $ubuntu-path,
+    ubuntu-medium);
+}
+
+@font-face {
+    @include createFont(ubuntu-medium,
+    italic,
+    500,
+    $ubuntu-path,
+    ubuntu-medium-italic);
+}
+
+@font-face {
+    @include createFont(ubuntu-medium,
+    normal,
+    bold,
+    $ubuntu-path,
+    ubuntu-bold);
+}
+
+@font-face {
+    @include createFont(ubuntu-medium,
+    italic,
+    bold,
+    $ubuntu-path,
+    ubuntu-bold-italic);
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}

@@ -1,0 +1,102 @@
+@import "cores";
+
+section {
+	background: $branco;
+	animation: fadeIn 0.8s;
+	
+	figure {
+
+		img {
+			width: 100%;
+		}
+	}
+
+	.content {
+		padding: 30px 20px;
+
+		h1 {
+			margin: 0 0 30px;
+			font-size: 3em;
+			color: $cor-1;
+			text-align: center;
+		}
+
+		p {
+			font-size: 1.4em;
+			line-height: 1.6em;
+			text-align: center;
+			color: $cor-5;
+		}
+	}
+}
+
+
+// RESPONSIVIDADE
+
+@media (min-width: 425px) {
+	
+	section {
+		
+		figure {
+			display: flex;
+			align-items: center;
+		}
+		
+		.content {
+			padding: 40px 30px;
+	
+			h1 {
+				font-size: 4em;
+			}
+	
+			p {
+				font-size: 2em;
+			}
+		}
+	}
+}
+
+@media (min-width: 768px) {
+	
+	section {
+		
+		.content {
+			padding: 60px;
+	
+			h1 {
+				font-size: 7em;
+			}
+	
+			p {
+				font-size: 3.5em;
+			}
+		}
+	}
+}
+
+@media (min-width: 1280px) {
+	
+	section {
+		display: flex;
+		align-items: flex-start;
+		justify-content: center;
+		padding: 145px 0 60px;
+		
+		figure {
+			width: 640px;
+		}
+	
+		.content {
+			width: 640px;
+			padding: 60px 60px 0;
+	
+			h1 {
+				font-size: 5em;
+			}
+	
+			p {
+				font-size: 2.5em;
+			}
+		}
+	}
+}
