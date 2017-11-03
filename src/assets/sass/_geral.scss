@@ -73,6 +73,7 @@ table {
         tr {
             background: $cor-3;
             border-bottom: 1px solid $branco;
+            transition: all 0.5s;
 
             td {
                 padding: 10px 0 10px 10px;
@@ -82,6 +83,10 @@ table {
                 &:last-child {
                     padding: 10px;
                 }
+            }
+
+            &:hover {                
+             background: darken($cor-3, 5%);
             }
         }
     }
